@@ -1,24 +1,23 @@
-﻿using System.Text;
+﻿Console.Clear();
+/*
+View English output:
+  c:\Exercise\ACME\data.txt
+
+Посмотреть русский вывод:
+  c:\Exercise\ACME\ru-RU\data.txt
+
+*/
+
+string projectName = "ACME";
+string russianMessage = "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0440\u0443\u0441\u0441\u043a\u0438\u0439 \u0432\u044b\u0432\u043e\u0434";
 
 
-Console.Clear();
-var firstName = "Bob";
-var saludo = "Hola";
-var message = saludo + " " + firstName + "!";
-Console.WriteLine(message);
-Console.WriteLine(string.Concat(saludo, " ", firstName, "!"));
-Console.WriteLine($"{saludo} {firstName}!");
-Console.WriteLine(string.Format("{0} {1}!", saludo, firstName));
+var enIngles = $@"View English output:
+    c:\Exercise\{projectName}\data.txt
+";
 
-var saludoBuilder = new StringBuilder();
+var enRuso = $@"{russianMessage}:
+    c:\Exercise\{projectName}\ru-RU\data.txt";
 
-saludoBuilder.Append(saludo);
-saludoBuilder.Append(" ");
-saludoBuilder.Append(firstName);
-saludoBuilder.Append("!");
-
-Console.WriteLine(saludoBuilder.ToString());
-
-string[] palabras = [saludo, " ", firstName, "!"];
-string saludoString = string.Join("", palabras);
-Console.WriteLine(saludoString);
+Console.WriteLine(enIngles);
+Console.WriteLine(enRuso);
