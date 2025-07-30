@@ -1,28 +1,13 @@
-﻿Console.Clear();
-Console.WriteLine("Char: " + 'b');
-Console.WriteLine("string: " + "Hola Mundo");
-Console.WriteLine("int: " + 123);
-Console.WriteLine("Float: " + 0.25F);
-Console.WriteLine("Double: " + 2.625D);
-Console.WriteLine("Decimal: " + 12.39816M);
-Console.WriteLine("Bool: " + true);
-Console.WriteLine();
-Console.WriteLine("123");
-Console.WriteLine(123);
-Console.WriteLine("True");
-Console.WriteLine(true);
+﻿/*Bob
+3
+34,4
 
-var saludo = "Hola Mundo";
-var saludoPorSegundaVez = "Hola Mundo por segunda vez";
-Console.WriteLine(saludo);
-Console.WriteLine(saludoPorSegundaVez);
+Hello, Bob! You have 3 messages in your inbox. The temperature is 34.4 celsius.
 
+*/
 
-var ingresos = 100;
-var impuestos = 21;
-var gananciasNetas = 0f;
+var nombre = "Bob";
+var numMensajes = 3;
+var temperatura = 34.4;
 
-gananciasNetas = ingresos / impuestos;
-
-Console.WriteLine(gananciasNetas);
-
+Console.WriteLine("Hola, " + nombre + "! Tu tienes " + numMensajes + " mensajes en tu buzón de correo. La temperatura es de " + temperatura + " celsius.");
