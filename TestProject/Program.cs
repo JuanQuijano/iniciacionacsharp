@@ -1,20 +1,14 @@
 ﻿Console.Clear();
 
-string[] fraudulentOrdersId = { "A123", "B456", "C789"};
+int[] inventory = {200,450,700,175,250};
+var indice = 1;
+var suma = 0;
+foreach (var number in inventory)
+{
+    Console.WriteLine($"Numero de inventario: {indice}, valor: {number}, Total parcial: {suma += number} ");
+    indice++;
+}
 
-//fraudulentOrdersId[3] = "D475";
+Console.WriteLine($"Hay {indice} items en la matriz, y dan una suma total: {suma}");
 
-Console.WriteLine($"First:  {fraudulentOrdersId[0]}");
-Console.WriteLine($"Second: {fraudulentOrdersId[1]}");
-Console.WriteLine($"Third:  {fraudulentOrdersId[2]}");
-
-fraudulentOrdersId[0] = "F000";
-Console.WriteLine($"Reassign First: {fraudulentOrdersId[0]}");
-
-Console.WriteLine($"There are {fraudulentOrdersId.Length} fraudulent orders to precess.");
-
-List<string> lista = new List<string>();
-lista.add("uno");
-lista.add("dos");
-lista.add("tres");
 
