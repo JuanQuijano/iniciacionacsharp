@@ -1,14 +1,32 @@
 ﻿Console.Clear();
 
-int[] inventory = {200,450,700,175,250};
-var indice = 1;
-var suma = 0;
-foreach (var number in inventory)
+/* Declarar matriz con estos valores
+B123
+C234
+A345
+C15
+B177
+G3003
+C235
+B179
+*/
+
+string[] pedidofraudulentos = { "B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179" };
+
+foreach (var pedido in pedidofraudulentos)
 {
-    Console.WriteLine($"Numero de inventario: {indice}, valor: {number}, Total parcial: {suma += number} ");
-    indice++;
+    if (pedido.StartsWith("B"))
+    { Console.WriteLine(pedido); }
 }
 
-Console.WriteLine($"Hay {indice} items en la matriz, y dan una suma total: {suma}");
 
 
+
+
+
+
+/* La salida que debo obtener es
+B123
+B177
+B179
+*/
