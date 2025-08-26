@@ -1,12 +1,26 @@
 ﻿using System.Net.WebSockets;
 Console.Clear();
 
-var name = "bob";
-var mensaje = "Found Chuck";
+/*
+Set contains 42
+Total: 108
+*/
 
-if (name == "bob")
-    mensaje = "Found Bob";
-else if (name == "steve")
-    mensaje = "Found Steve";
 
-Console.WriteLine(mensaje);
+int[] numbers = { 4, 8, 15, 16, 23, 42 };
+int total = 0;
+bool found = false;
+
+foreach (int number in numbers)
+{
+    total += number;
+    if (number == 42)
+        found = true;
+}
+
+if (found)
+    Console.WriteLine("Set contains 42");
+
+
+Console.WriteLine($"Total: {total}");
+
