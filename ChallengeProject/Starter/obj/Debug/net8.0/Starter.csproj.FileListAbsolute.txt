@@ -1,0 +1,15 @@
+/workspaces/iniciacionacsharp/ChallengeProject/Starter/bin/Debug/net8.0/Starter
+/workspaces/iniciacionacsharp/ChallengeProject/Starter/bin/Debug/net8.0/Starter.deps.json
+/workspaces/iniciacionacsharp/ChallengeProject/Starter/bin/Debug/net8.0/Starter.runtimeconfig.json
+/workspaces/iniciacionacsharp/ChallengeProject/Starter/bin/Debug/net8.0/Starter.dll
+/workspaces/iniciacionacsharp/ChallengeProject/Starter/bin/Debug/net8.0/Starter.pdb
+/workspaces/iniciacionacsharp/ChallengeProject/Starter/obj/Debug/net8.0/Starter.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/iniciacionacsharp/ChallengeProject/Starter/obj/Debug/net8.0/Starter.AssemblyInfoInputs.cache
+/workspaces/iniciacionacsharp/ChallengeProject/Starter/obj/Debug/net8.0/Starter.AssemblyInfo.cs
+/workspaces/iniciacionacsharp/ChallengeProject/Starter/obj/Debug/net8.0/Starter.csproj.CoreCompileInputs.cache
+/workspaces/iniciacionacsharp/ChallengeProject/Starter/obj/Debug/net8.0/Starter.sourcelink.json
+/workspaces/iniciacionacsharp/ChallengeProject/Starter/obj/Debug/net8.0/Starter.dll
+/workspaces/iniciacionacsharp/ChallengeProject/Starter/obj/Debug/net8.0/refint/Starter.dll
+/workspaces/iniciacionacsharp/ChallengeProject/Starter/obj/Debug/net8.0/Starter.pdb
+/workspaces/iniciacionacsharp/ChallengeProject/Starter/obj/Debug/net8.0/Starter.genruntimeconfig.cache
+/workspaces/iniciacionacsharp/ChallengeProject/Starter/obj/Debug/net8.0/ref/Starter.dll
