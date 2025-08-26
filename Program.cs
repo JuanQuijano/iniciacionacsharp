@@ -1,14 +1,13 @@
-﻿Console.Clear();
+﻿using System.Net.WebSockets;
 
-var permission = "Admin";
-var level = 15;
-var mensaje = "You do not have sufficient privileges.";
+Console.Clear();
+int value;
 
-if (permission.Contains("Admin"))
-{ mensaje = level > 55 ? "Welcome, Super Admin user." : "Welcome, Admin user."; }
-else if (permission.Contains("Manager"))
-{ mensaje = level > 20 ? "Contact an Admin for access." : "You do not have sufficient privileges."; }
-
-Console.WriteLine(mensaje);
-
-
+var flag = true;
+if (flag)
+{
+    value = 10;
+    Console.WriteLine($"Inside the code block: {value}");
+}
+value = 11;
+Console.WriteLine($"Outside the code block: {value}");
