@@ -1,0 +1,15 @@
+/workspaces/iniciacionacsharp/obj/Debug/net8.0/iniciacionacsharp.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/iniciacionacsharp/obj/Debug/net8.0/iniciacionacsharp.AssemblyInfoInputs.cache
+/workspaces/iniciacionacsharp/obj/Debug/net8.0/iniciacionacsharp.AssemblyInfo.cs
+/workspaces/iniciacionacsharp/obj/Debug/net8.0/iniciacionacsharp.csproj.CoreCompileInputs.cache
+/workspaces/iniciacionacsharp/obj/Debug/net8.0/iniciacionacsharp.sourcelink.json
+/workspaces/iniciacionacsharp/bin/Debug/net8.0/iniciacionacsharp
+/workspaces/iniciacionacsharp/bin/Debug/net8.0/iniciacionacsharp.deps.json
+/workspaces/iniciacionacsharp/bin/Debug/net8.0/iniciacionacsharp.runtimeconfig.json
+/workspaces/iniciacionacsharp/bin/Debug/net8.0/iniciacionacsharp.dll
+/workspaces/iniciacionacsharp/bin/Debug/net8.0/iniciacionacsharp.pdb
+/workspaces/iniciacionacsharp/obj/Debug/net8.0/iniciacionacsharp.dll
+/workspaces/iniciacionacsharp/obj/Debug/net8.0/refint/iniciacionacsharp.dll
+/workspaces/iniciacionacsharp/obj/Debug/net8.0/iniciacionacsharp.pdb
+/workspaces/iniciacionacsharp/obj/Debug/net8.0/iniciacionacsharp.genruntimeconfig.cache
+/workspaces/iniciacionacsharp/obj/Debug/net8.0/ref/iniciacionacsharp.dll
