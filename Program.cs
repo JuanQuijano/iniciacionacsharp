@@ -1,13 +1,12 @@
 ﻿using System.Net.WebSockets;
-
 Console.Clear();
-int value;
 
-var flag = true;
-if (flag)
-{
-    value = 10;
-    Console.WriteLine($"Inside the code block: {value}");
-}
-value = 11;
-Console.WriteLine($"Outside the code block: {value}");
+var name = "bob";
+var mensaje = "Found Chuck";
+
+if (name == "bob")
+    mensaje = "Found Bob";
+else if (name == "steve")
+    mensaje = "Found Steve";
+
+Console.WriteLine(mensaje);
