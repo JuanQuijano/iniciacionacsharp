@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("iniciacionacsharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+920cbf8bf89ebc99df9c7bf49dcad12bf4f512eb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d80abf2daa0d8a99bb9e6f388ef56dfbe8fece7")]
 [assembly: System.Reflection.AssemblyProductAttribute("iniciacionacsharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("iniciacionacsharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
