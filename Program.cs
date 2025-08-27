@@ -2,28 +2,41 @@
 
 Console.Clear();
 
-for (int numero = 1; numero <= 100; numero++)
+var tirada = new Random();
+int SaludHeroe = 10;
+int SaludMonstruo = 10;
+
+Console.WriteLine("Combate: Héroe vs Monstruo (ambos empiezan con 10 puntos de salud)");
+
+// Bucle externo del combate: se repite mientras ambos sigan con vida
+while (SaludHeroe > 0 && SaludMonstruo > 0)
 {
-	// Usamos la forma clásica switch/case/break mediante una clave entera:
-	// 0 = ninguno, 1 = divisible por 3, 2 = divisible por 5, 3 = ambos
-	int divisiblePor = (numero % 3 == 0 ? 1 : 0) + (numero % 5 == 0 ? 2 : 0);
-	string term = string.Empty;
+   // Turno del héroe (ataca primero)
+   int AtaqueDelHeroe = tirada.Next(1, 11); // 1..10
+   SaludMonstruo -= AtaqueDelHeroe;
+   Console.WriteLine($"El héroe ataca y causa {AtaqueDelHeroe} puntos de daño. Salud restante del monstruo: {Math.Max(SaludMonstruo, 0)}");
 
-	switch (divisiblePor)
-	{
-		case 3:
-			term = "FizzBuzz";
-			break;
-		case 1:
-			term = "Fizz";
-			break;
-		case 2:
-			term = "Buzz";
-			break;
-		default:
-			term = string.Empty;
-			break;
-	}
+   Console.WriteLine("Pulse una tecla para ell siguiente movimiento");
+   Console.ReadLine();
 
-   Console.WriteLine(string.IsNullOrEmpty(term) ? numero.ToString() : $"{numero} {term}");
+   if (SaludMonstruo > 0)
+   {
+      int AtaqueDelMonstruo = tirada.Next(1, 11); // 1..10
+      SaludHeroe -= AtaqueDelMonstruo;
+      Console.WriteLine($"El monstruo contraataca y causa {AtaqueDelMonstruo} puntos de daño. Salud restante del héroe: {Math.Max(SaludHeroe, 0)}");
+   }
+
+   Console.WriteLine("Pulse una tecla para el siguiente movimiento");
+   Console.ReadLine();
+   
 }
+
+if (SaludMonstruo <= 0)
+{ Console.WriteLine("El héroe ha vencido al monstruo!"); }
+else
+{ Console.WriteLine("El monstruo ha vencido al héroe."); }
+
+
+Console.WriteLine("Presione ENTER para salir...");
+Console.ReadLine();
+
