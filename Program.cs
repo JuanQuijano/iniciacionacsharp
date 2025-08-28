@@ -1,37 +1,32 @@
-﻿
-using System;
+﻿Console.Clear();
 
-Console.Clear();
-
-Console.WriteLine("Introduce un número entre 5 y 10");
-var acceptedValue = 0;
+var acceptedRole = string.Empty;
 var mensaje = "";
+
+Console.WriteLine("Introduce un rol (Administrador, Director o Usuario)");
 
 do
 {
     string? input = Console.ReadLine();
 
-    if (int.TryParse(input, out int value) == true)
+    if (string.IsNullOrWhiteSpace(input))
     {
-        if (value < 5 || value > 10)
-        {
-            mensaje = $"Has introducido el número ({input}), pero debe estar entre 5 y 10;";
-        }
-        else
-        {
-            acceptedValue = value;
-            mensaje = $"El número ({acceptedValue}) ha sido aceptado.";
-        }
+        mensaje = "No se ha introducido ningún valor. Introduce un rol (Administrador, Director o Usuario)";
     }
     else
+    {
+        string trimmed = input.Trim();
+        string normalized = trimmed.ToLower();
+
+        if (normalized == "administrador" || normalized == "director" || normalized == "usuario")
         {
-            mensaje = $"El valor introducido no es un número. Intentalo de nuevo.";
+            acceptedRole = trimmed;
+            mensaje = $"Tu valor de entrada ({acceptedRole}) ha sido aceptado.";
         }
-    
+        else
+        { mensaje = $"El nombre de rol que has introducido ({input}), no es válido. Introduce un rol (Administrador, Director o Usuario)"; }
+    }
+
     Console.WriteLine(mensaje);
 
-} while (acceptedValue == 0);
-
-
-
-
+} while (string.IsNullOrEmpty(acceptedRole));
